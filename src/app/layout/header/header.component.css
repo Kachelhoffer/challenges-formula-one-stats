@@ -1,0 +1,10 @@
+.logo{
+    max-width: 125px;
+}
+.logoText{
+    font-weight: 500;
+    font-size: 18px;
+}
+.text-bg-dark{
+    background-color: #212121 !important;
+}
