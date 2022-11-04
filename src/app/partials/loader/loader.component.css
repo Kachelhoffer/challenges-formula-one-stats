@@ -1,0 +1,22 @@
+.loaderParent{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(175, 175, 175, 0.5);
+}
+  
+  .loading {
+    position: relative;
+    z-index: 101;
+    width: 4rem;
+    height: 4rem;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    
+    position: absolute;
+    left: 46%;
+    top: 44%;
+  }
+  

@@ -1,0 +1,7 @@
+<div class="cardsContainer">
+    <div class="row" *ngIf="this.worldChampionList">
+      <div *ngFor="let winner of this.worldChampionList.MRData.StandingsTable.StandingsLists; let i = index" class="col-md-4">
+        <app-card [winner]="winner"></app-card>
+      </div>
+    </div>
+</div>

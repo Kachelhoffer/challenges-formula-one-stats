@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  API_BASE_URL: "https://ergast.com/api/f1/",
+  reportingYearStart: 2015
 };

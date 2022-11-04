@@ -1,18 +1,12 @@
-<mat-card class="matCustomCard">
-    <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-        <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button class="btn btn-primary">More Info</button>
-    </mat-card-actions>
-</mat-card>
+
+<div class="card" *ngIf="winner">
+    <div class="card-header">
+        <div class="yearTitle">{{ winner.season }}</div>
+    </div>
+    <div class="card-body">
+        <h4>World Champion</h4>
+        <h2 class="card-title">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} - {{ winner.DriverStandings[0].Constructors[0].name }}</h2>
+        <p class="card-text">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} with {{ winner.DriverStandings[0].wins }} wins in {{ winner.round }} rounds and {{ winner.DriverStandings[0].points }} points</p>
+        <a href="#" class="btn btn-primary">View All Races for {{ winner.season }}</a>
+    </div>
+</div>

@@ -9,9 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 //Angular Material Imports
 import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 import { CardComponent } from './partials/card/card.component';
 import { ExpansionPanelComponent } from './partials/expansion-panel/expansion-panel.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { CardsDisplayComponent } from './layout/cards-display/cards-display.component';
+import { ExpansionPanelsDisplayComponent } from './layout/expansion-panels-display/expansion-panels-display.component';
+import { LoaderComponent } from './partials/loader/loader.component';
+
 
 @NgModule({
   declarations: [
@@ -19,14 +25,18 @@ import {MatExpansionModule} from '@angular/material/expansion';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    CardsDisplayComponent,
+    ExpansionPanelsDisplayComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

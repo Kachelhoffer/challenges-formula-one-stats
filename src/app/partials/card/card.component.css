@@ -1,5 +1,12 @@
+.card{
+    margin: 10px;
+}
 .matCustomCard{
     max-width: 300px;
     display: inline-block;
     margin: 10px;
+}
+.yearTitle{
+    font-size: 18px;
+    font-weight: 500;
 }
