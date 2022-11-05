@@ -19,3 +19,14 @@ a:hover{
 .buttonPadding{
     padding-left: 80px;
 }
+@media only screen and (max-width: 767px) {
+    .iconContainer
+    {
+        margin-top: 25px;
+    }
+    .changeDisplayButtonsContainer{
+        /* display: none; */
+        position: absolute;
+        right: -30px;
+    }
+  }
