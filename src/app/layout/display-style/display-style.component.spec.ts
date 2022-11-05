@@ -22,4 +22,5 @@ describe('DisplayStyleComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
