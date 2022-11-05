@@ -22,10 +22,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('formula-one-stats');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('formula-one-stats app is running!');
-  });
+  
 });

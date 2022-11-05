@@ -1,27 +1,20 @@
-<div class="matExpansionPanelContainer">
+<div class="matExpansionPanelContainer" *ngIf="winner">
     <mat-accordion>
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              This is the expansion title
+              {{ winner.season }}
             </mat-panel-title>
             <mat-panel-description>
-              This is a summary of the content
+              World Champion: {{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} - {{ winner.DriverStandings[0].Constructors[0].name }}
             </mat-panel-description>
           </mat-expansion-panel-header>
-          <p>This is the primary content of the panel.</p>
+            <div class="card-body">
+              <h4>World Champion</h4>
+              <h2 class="card-title">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} - {{ winner.DriverStandings[0].Constructors[0].name }}</h2>
+              <p class="card-text">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} with {{ winner.DriverStandings[0].wins }} wins in {{ winner.round }} races and {{ winner.DriverStandings[0].points }} points</p>
+              <a class="btn btn-primary" (click)="raceDetailHasBeenRequested()">View All Races for {{ winner.season }}</a>
+            </div>
         </mat-expansion-panel>
-        <!-- <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Self aware panel
-            </mat-panel-title>
-            <mat-panel-description>
-              Currently I am {{panelOpenState ? 'open' : 'closed'}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
-        </mat-expansion-panel> -->
       </mat-accordion>
 </div>

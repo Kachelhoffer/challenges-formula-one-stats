@@ -1,4 +1,8 @@
 
+<div class="row instructionsContainer" *ngIf="yearRaceData">
+    <h2>Race Detail</h2>
+    <h3>Below you will find the winners of all the races in {{ yearRaceData.MRData.RaceTable.season }}</h3>
+  </div>
 <div class="card" *ngIf="yearRaceData">
     <div class="card-header">
         <div class="yearTitle">All races for {{ yearRaceData.MRData.RaceTable.season }} with 1st position placements</div>

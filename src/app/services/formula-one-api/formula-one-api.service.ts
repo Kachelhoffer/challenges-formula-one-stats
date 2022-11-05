@@ -80,9 +80,8 @@ export class FormulaOneAPIService implements OnInit, OnDestroy {
     this.unsubscribe.push(subscr);
   }
 
-  //THis function handels the sort event then restores the value into the Behaviour Subject
+  //This function handels the sort event then restores the value into the Behaviour Subject
   sortResultDecending(result: ChampionDriverListModelType){
-    console.log("Sorting...")
     let temp = result;
     let sorted;
     if(temp)

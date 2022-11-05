@@ -10,7 +10,5 @@ describe('FormulaOneAPIService', () => {
     service = TestBed.inject(FormulaOneAPIService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
+
 });
