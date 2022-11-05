@@ -17,6 +17,7 @@ import { ExpansionPanelComponent } from './partials/expansion-panel/expansion-pa
 import { CardsDisplayComponent } from './layout/cards-display/cards-display.component';
 import { ExpansionPanelsDisplayComponent } from './layout/expansion-panels-display/expansion-panels-display.component';
 import { LoaderComponent } from './partials/loader/loader.component';
+import { RaceDetailComponent } from './partials/race-detail/race-detail.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { LoaderComponent } from './partials/loader/loader.component';
     ExpansionPanelComponent,
     CardsDisplayComponent,
     ExpansionPanelsDisplayComponent,
-    LoaderComponent
+    LoaderComponent,
+    RaceDetailComponent
   ],
   imports: [
     BrowserModule,

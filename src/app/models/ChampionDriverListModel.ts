@@ -1,4 +1,4 @@
-import { ChampionDriver } from "./ChampionDriver"
+import { WinnerModel } from "./WinnerModel"
 
 export interface ChampionDriverListModel{
     "MRData": {
@@ -10,7 +10,7 @@ export interface ChampionDriverListModel{
         "total": string,
         "StandingsTable": {
             "driverStandings": string,
-            "StandingsLists": ChampionDriver[]
+            "StandingsLists": WinnerModel[]
         }
     }
 }
