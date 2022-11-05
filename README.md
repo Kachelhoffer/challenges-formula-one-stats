@@ -18,17 +18,20 @@ git clone https://github.com/Kachelhoffer/challenges-formula-one-stats.git
 npm install
 ng serve
 
+Navigate to `http://localhost:4200/`
+
 
 ## Architectural summary
 
 The main project is divides up into the foillowing folders within the app folder
 
-layout
-models
-partials
-services
+layout, models, partials, services
 
 The project has seperated Services(Used for calling API methods and runnign the loader service), models(Used to strongly type data and allow intellisence), partials(individual components that serve as some sort of partial - can be called in multiple components), and layout(components used to structure the layout of the page.)
+
+The partials and layout are seperated in such a way that it is easy to identify when a component is responsible for making some larger layout decision or if its a small piec of the pizzle fitted into place. The API calls are seperated from the application logic into the formula-one-api-service, such that it can be injected when needed. Some environment variables are in use to set the default API route and the minimum year to retreive data from. This is used to dynamiclly calculate the offset and call the API for the smallest possible subset of data.
+
+there is also some minimal unit test coverage using jasmine and karma.
 
 
 ## Development server
