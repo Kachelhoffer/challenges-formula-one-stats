@@ -18,6 +18,8 @@ import { CardsDisplayComponent } from './layout/cards-display/cards-display.comp
 import { ExpansionPanelsDisplayComponent } from './layout/expansion-panels-display/expansion-panels-display.component';
 import { LoaderComponent } from './partials/loader/loader.component';
 import { RaceDetailComponent } from './partials/race-detail/race-detail.component';
+import { RaceItemComponent } from './partials/race-item/race-item.component';
+import { ContentDisplayComponent } from './layout/content-display/content-display.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { RaceDetailComponent } from './partials/race-detail/race-detail.componen
     CardsDisplayComponent,
     ExpansionPanelsDisplayComponent,
     LoaderComponent,
-    RaceDetailComponent
+    RaceDetailComponent,
+    RaceItemComponent,
+    ContentDisplayComponent
   ],
   imports: [
     BrowserModule,

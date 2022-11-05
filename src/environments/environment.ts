@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_BASE_URL: "https://ergast.com/api/f1/",
+  API_BASE_URL: "https://ergast.com/api/f1",
   reportingYearStart: 2015
 };
 

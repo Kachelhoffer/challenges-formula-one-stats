@@ -1,14 +1,8 @@
 <div class="cardsContainer">
-    <div class="row" *ngIf="this.worldChampionList && !detailSelectioMade">
+    <div class="row" *ngIf="this.worldChampionList">
       <div *ngFor="let winner of this.worldChampionList.MRData.StandingsTable.StandingsLists; let i = index" class="col-md-4">
         <!-- This card component generates a card tile for each year datapoint -->
         <app-card (yearRaceDetailRequested)="yearRaceDetailRequested($event)" [winner]="winner"></app-card>
-      </div>
-    </div>
-    <div class="row" *ngIf="detailSelectioMade">
-      <div class="col">
-        <!-- This component displays the Race Detail for a specific year. Only becomes visible after selection is made from Card -->
-        <app-race-detail (navigateBackEvent)="navigateBackEventClicked($event)"></app-race-detail>
       </div>
     </div>
 </div>

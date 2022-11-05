@@ -1,4 +1,13 @@
+
+<!-- <app-expansion-panel></app-expansion-panel>
 <app-expansion-panel></app-expansion-panel>
-<app-expansion-panel></app-expansion-panel>
-<app-expansion-panel></app-expansion-panel>
-<app-expansion-panel></app-expansion-panel>
+<app-expansion-panel></app-expansion-panel> -->
+
+<div class="panelsContainer">
+    <div class="row" *ngIf="this.worldChampionList">
+      <div *ngFor="let winner of this.worldChampionList.MRData.StandingsTable.StandingsLists; let i = index" class="col-md-12">
+        <!-- This expantion panel component generates a expansion panel for each year datapoint -->
+        <app-expansion-panel (yearRaceDetailRequested)="yearRaceDetailRequested($event)" [winner]="winner"></app-expansion-panel>
+      </div>
+    </div>
+</div>

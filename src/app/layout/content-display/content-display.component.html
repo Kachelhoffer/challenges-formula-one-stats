@@ -1,0 +1,15 @@
+
+
+<div class="row" *ngIf="this.worldChampionList && !detailSelectionMade">
+    <!-- This Component Displays the data in Card Format -->
+    <app-cards-display (yearRaceDetailRequestedEvent)="yearRaceDetailRequested($event)" [worldChampionList]="worldChampionList"></app-cards-display>
+    <!-- This component displays data in list/expansion panel format -->
+    <app-expansion-panels-display (yearRaceDetailRequestedEvent)="yearRaceDetailRequested($event)" [worldChampionList]="worldChampionList"></app-expansion-panels-display>
+</div>
+<div class="row raceDetailTopMargin" *ngIf="detailSelectionMade">
+    <div class="col">
+      <!-- This component displays the Race Detail for a specific year. Only becomes visible after selection is made from Card -->
+        <app-race-detail (navigateBackEvent)="navigateBackEventClicked($event)" [yearRaceData]="yearRaceData" 
+        [worldChampionWinnerModel]="worldChampionWinnerModel"></app-race-detail>
+    </div>
+</div>
