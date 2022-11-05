@@ -6,8 +6,6 @@ This project uses the [Ergast](http://ergast.com/mrd/) API to display a list of 
 
 The app provides a multi laoyout for user experience. You an select between lsit based display and a card based display 
 
-![alt text](github.com/Kachelhoffer/challenges-formula-one-stats/blob/main/src/assets/git-images/1.png?raw=true)
-
 ## First time Setup
 
 1) Clone the repo into a directory.
@@ -21,8 +19,16 @@ npm install
 ng serve
 
 
-## Project Structure - Summary of relevant componets
+## Architectural summary
 
+The main project is divides up into the foillowing folders within the app folder
+
+layout
+models
+partials
+services
+
+The project has seperated Services(Used for calling API methods and runnign the loader service), models(Used to strongly type data and allow intellisence), partials(individual components that serve as some sort of partial - can be called in multiple components), and layout(components used to structure the layout of the page.)
 
 
 ## Development server
