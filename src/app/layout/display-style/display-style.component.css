@@ -1,0 +1,21 @@
+.displayInlineBlock{
+    display: inline-block;
+}
+.iconContainer{
+    margin: 20px 10px 0px 10px;
+}
+.changeDisplayButtonsContainer{
+    position: relative;
+    z-index: 1;
+    margin-bottom: -75px;
+}
+.iconContainer:hover,
+a:hover{
+    cursor: pointer;
+}
+.floatRight{
+    float: right;
+}
+.buttonPadding{
+    padding-left: 80px;
+}

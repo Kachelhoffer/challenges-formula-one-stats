@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { WinnerModelType } from 'src/app/partials/card/card.component';
 import { ChampionDriverListModelType, FormulaOneAPIService, RaceWinnersForYearType } from 'src/app/services/formula-one-api/formula-one-api.service';
@@ -9,6 +9,8 @@ import { ChampionDriverListModelType, FormulaOneAPIService, RaceWinnersForYearTy
   styleUrls: ['./content-display.component.css']
 })
 export class ContentDisplayComponent implements OnInit {
+
+  @Input('displayStyle') displayStyle:string|undefined;
 
   private unsubscribe: Subscription[] = [];
 

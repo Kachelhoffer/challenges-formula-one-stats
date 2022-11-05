@@ -1,4 +1,9 @@
+
 <div class="cardsContainer">
+  <div class="row instructionsContainer">
+    <h2>Please select a year</h2>
+    <h3>Click on the button in any of the cards below to get more detail about the relevant year</h3>
+  </div>
     <div class="row" *ngIf="this.worldChampionList">
       <div *ngFor="let winner of this.worldChampionList.MRData.StandingsTable.StandingsLists; let i = index" class="col-md-4">
         <!-- This card component generates a card tile for each year datapoint -->

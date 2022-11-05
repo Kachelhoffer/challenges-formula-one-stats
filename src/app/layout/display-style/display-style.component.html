@@ -1,0 +1,44 @@
+<div class="px-4 py-5 my-5 text-center" *ngIf="!optionSelected">
+    <div class="col-md-6 displayInlineBlock">
+        <img class="d-block mx-auto mb-4" src="/assets/icons/tile.png" alt="" width="50" height="50">
+        <h1 class="display-5 fw-bold">Card/Tile Layout</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">This option displays data in a Card/Tile Layout. Go here if you prefer not to see a boring list :D</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" (click)="selectedOption('card')">Show Card Layout</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 displayInlineBlock">
+        <img class="d-block mx-auto mb-4 " src="/assets/icons/list.png" alt="" width="50" height="50">
+        <h1 class="display-5 fw-bold">List Layout</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">This option displays data in a List Layout. Go here if you prefer to see a summarized list of the data</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" (click)="selectedOption('list')">Show List Layout</button>
+            </div>
+        </div>
+    </div>
+  </div>
+<div class="changeDisplayButtonsContainer" *ngIf="optionSelected">
+    <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2 buttonPadding">
+            <div class="iconContainer displayInlineBlock" >
+                <a class="nostyle" (click)="selectedOption('card')"><img class="d-block mx-auto mb-4 displayInlineBlock" src="/assets/icons/tile.png" alt="" width="40" height="40"></a>
+            </div>
+            <div class="iconContainer displayInlineBlock">
+                <a class="nostyle" (click)="selectedOption('list')"><img class="d-block mx-auto mb-4 displayInlineBlock" src="/assets/icons/list.png" alt="" width="40" height="40"></a>
+            </div>
+            
+            
+        </div>
+        <div class="col-md-1">
+            
+        </div>
+    </div>
+</div>
+
+<div class="contentDisplayContainer" *ngIf="optionSelected">
+    <app-content-display [displayStyle]="displayStyle"></app-content-display>
+</div>
