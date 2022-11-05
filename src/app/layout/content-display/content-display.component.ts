@@ -28,8 +28,10 @@ export class ContentDisplayComponent implements OnInit {
   detailSelectionMade:boolean = false;
 
   constructor(
-    private formulaOneAPIService:FormulaOneAPIService) { }
+  private formulaOneAPIService:FormulaOneAPIService) 
+  { }
 
+  //This function executes one the selection event is emmited from the child componet
   yearRaceDetailRequested(winner:WinnerModelType)
   {
     if(winner)

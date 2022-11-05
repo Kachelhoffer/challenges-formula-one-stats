@@ -7,7 +7,8 @@
     </div>
     <div class="row" *ngIf="displayStyle === 'list'">
         <!-- This component displays data in list/expansion panel format -->
-        <app-expansion-panels-display (yearRaceDetailRequestedEvent)="yearRaceDetailRequested($event)" [worldChampionList]="worldChampionList"></app-expansion-panels-display>
+        <app-expansion-panels-display (yearRaceDetailRequestedEvent)="yearRaceDetailRequested($event)" 
+        [worldChampionList]="worldChampionList"></app-expansion-panels-display>
     </div>
 </div>
 <div class="row displayDetailContent raceDetailTopMargin" *ngIf="detailSelectionMade">

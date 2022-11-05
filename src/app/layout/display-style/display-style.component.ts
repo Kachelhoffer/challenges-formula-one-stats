@@ -12,6 +12,8 @@ export class DisplayStyleComponent implements OnInit {
 
   constructor() { }
 
+  //This function handels the selection option of the user. It toggles optionSelected and sends the relevant selection
+  //through to the child component
   selectedOption(option: string)
   {
     this.displayStyle = option;
