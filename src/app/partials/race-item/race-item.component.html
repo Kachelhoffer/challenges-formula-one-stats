@@ -1,0 +1,23 @@
+
+<div class="card" *ngIf="race">
+    <div class="card-body" [ngClass]="{'highlightRow': (worldChampionDriverID === race.Results[0].Driver.driverId)}">
+        
+        <div class="row raceItemPadding">
+            <div class="col-md-2">
+                <h4>Round: {{ race.round }}</h4>
+            </div>
+            <div class="col-md-2">
+                <h4>Position: {{ race.Results[0].position }}st</h4>
+            </div>
+            <div class="col-md-3">
+                Name: {{ race.Results[0].Driver.givenName }} {{ race.Results[0].Driver.familyName }}
+            </div>
+            <div class="col-md-3">
+                Race: {{ race.raceName }}
+            </div>
+            <div class="col-md-2">
+                Points: +{{ race.Results[0].points }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,29 @@
 
-<div class="card">
+<div class="card" *ngIf="yearRaceData">
     <div class="card-header">
-        <div class="yearTitle">Title</div>
+        <div class="yearTitle">All races for {{ yearRaceData.MRData.RaceTable.season }} with 1st position placements</div>
     </div>
-    <div class="card-body">
-        <h4>World Champion</h4>
-        <h2 class="card-title">Sub Title</h2>
-        <p class="card-text">Some Text</p>
-        <a class="btn btn-primary" (click)="navigateBackClicked()">Button</a>
+    <div class="card-body" *ngIf="worldChampionWinnerModel">
+        <div class="row">
+            <div class="col-md-10">
+                <h4>{{ yearRaceData.MRData.RaceTable.season }} World Champion</h4>
+                <h2 class="card-title">{{ worldChampionWinnerModel.DriverStandings[0].Driver.givenName }} {{ worldChampionWinnerModel.DriverStandings[0].Driver.familyName }} - {{ worldChampionWinnerModel.DriverStandings[0].Constructors[0].name }}</h2>
+                <p class="card-text">{{ worldChampionWinnerModel.DriverStandings[0].Driver.givenName }} {{ worldChampionWinnerModel.DriverStandings[0].Driver.familyName }}
+                    with {{ worldChampionWinnerModel.DriverStandings[0].wins }} wins in {{ worldChampionWinnerModel.round }} races and 
+                    {{ worldChampionWinnerModel.DriverStandings[0].points }} points
+                </p>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-primary" (click)="navigateBackClicked()">Back to all years</a>
+            </div>
+        </div>
+        
+        <div class="raceDetailTopPadding">
+            <div class="row" *ngFor="let race of yearRaceData.MRData.RaceTable.Races">
+                <app-race-item [race]="race" [worldChampionDriverID]="worldChampionWinnerModel.DriverStandings[0].Driver.driverId"></app-race-item>
+            </div>
+        </div>
+        
+        
     </div>
 </div>

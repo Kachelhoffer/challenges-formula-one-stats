@@ -6,7 +6,7 @@
     <div class="card-body">
         <h4>World Champion</h4>
         <h2 class="card-title">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} - {{ winner.DriverStandings[0].Constructors[0].name }}</h2>
-        <p class="card-text">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} with {{ winner.DriverStandings[0].wins }} wins in {{ winner.round }} rounds and {{ winner.DriverStandings[0].points }} points</p>
+        <p class="card-text">{{ winner.DriverStandings[0].Driver.givenName }} {{ winner.DriverStandings[0].Driver.familyName }} with {{ winner.DriverStandings[0].wins }} wins in {{ winner.round }} races and {{ winner.DriverStandings[0].points }} points</p>
         <a class="btn btn-primary" (click)="raceDetailHasBeenRequested()">View All Races for {{ winner.season }}</a>
     </div>
 </div>
