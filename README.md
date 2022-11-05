@@ -6,6 +6,8 @@ This project uses the [Ergast](http://ergast.com/mrd/) API to display a list of 
 
 The app provides a multi laoyout for user experience. You an select between lsit based display and a card based display 
 
+![alt text](https://github.com/Kachelhoffer/challenges-formula-one-stats/src/assets/git-imagesimage.jpg?raw=true)
+
 ## First time Setup
 
 1) Clone the repo into a directory.
@@ -13,77 +15,15 @@ The app provides a multi laoyout for user experience. You an select between lsit
 3) Serve the application
 
 CLI Commands:
-    git clone https://github.com/Kachelhoffer/challenges-formula-one-stats.git
-    npm install
-    ng serve
+
+git clone https://github.com/Kachelhoffer/challenges-formula-one-stats.git
+npm install
+ng serve
 
 
 ## Project Structure - Summary of relevant componets
 
-|-- app
-    |-- layout
-        |-- cards-display
-            |-- cards-display.component.ts
-            |-- cards-display.component.css
-            |-- cards-display.component.html
-        |-- content-display
-            |-- content-display.component.ts
-            |-- content-display.component.css
-            |-- content-display.component.html
-        |-- display-style
-            |-- display-style,component.ts
-            |-- display-style,component.css
-            |-- display-style,component.html
-        |-- expansion-panels-display
-            |-- expansion-panels-display.ts
-            |-- expansion-panels-display.css
-            |-- expansion-panels-display.html
-        |-- header
-            |-- header.component.ts
-            |-- header.component.css
-            |-- header.component.html
-    |-- models
-        |-- ChampionDriverListModel.ts
-        |-- CircuitModel.ts
-        |-- DriverModel.ts
-        |-- DriverStandingsModel.ts
-        |-- RaceModel.ts
-        |-- RaceResultModel.ts
-        |-- RaceWinnersForYear.ts
-        |-- WinnerModel.ts
-    |-- partials
-        |-- card
-            |-- card.component.ts
-            |-- card.component.css
-            |-- card.component.html
-        |-- expansion-panel
-            |-- expansion-panel.component.ts
-            |-- expansion-panel.component.css
-            |-- expansion-panel.component.html
-        |-- loader
-            |-- loader.component.ts
-            |-- loader.component.css
-            |-- loader.component.html
-        |-- race-detail
-            |-- race-detail.component.ts
-            |-- race-detail.component.css
-            |-- race-detail.component.html
-        |-- race-item
-            |-- race-item.component.ts
-            |-- race-item.component.css
-            |-- race-item.component.html
-    |-- services
-        |-- formula-one-api
-            |-- formula-one-api.service.ts
-        |-- loader
-            |-- loader.service.ts
-    |-- app.component.html
-    |-- app.component.ts
-    |-- styles.scss
-|-- environments
-    |-- environment.prod.ts
-    |-- environment.ts
-|-- styles.css
+
 
 ## Development server
 
