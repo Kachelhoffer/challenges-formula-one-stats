@@ -6,7 +6,7 @@ This project uses the [Ergast](http://ergast.com/mrd/) API to display a list of 
 
 The app provides a multi laoyout for user experience. You an select between lsit based display and a card based display 
 
-![alt text](https://github.com/Kachelhoffer/challenges-formula-one-stats/src/assets/git-imagesimage.jpg?raw=true)
+![alt text](github.com/Kachelhoffer/challenges-formula-one-stats/blob/main/src/assets/git-images/1.png?raw=true)
 
 ## First time Setup
 
