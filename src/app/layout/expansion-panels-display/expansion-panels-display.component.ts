@@ -5,7 +5,7 @@ import { ChampionDriverListModelType } from 'src/app/services/formula-one-api/fo
 @Component({
   selector: 'app-expansion-panels-display',
   templateUrl: './expansion-panels-display.component.html',
-  styleUrls: ['./expansion-panels-display.component.css']
+  styleUrls: ['./expansion-panels-display.component.scss']
 })
 export class ExpansionPanelsDisplayComponent{
 

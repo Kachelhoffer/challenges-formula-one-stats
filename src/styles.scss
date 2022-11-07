@@ -1,6 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+$primaryColor: #E80002;
+$secondaryColor: #212121;
+$secondaryColorHovered: #3d3d3d;
+
+
+$primaryHeadingFontSize: 22px;
+$headingFontWeight: 500;
+
+@mixin primaryHeadingFontStyle{
+    font-size: $primaryHeadingFontSize !important;
+    font-weight: $headingFontWeight !important;
+}
+
+h1{
+    @include primaryHeadingFontStyle
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -11,18 +28,21 @@ mat-expansion-panel-header.mat-expanded{
     padding: 30px !important;
 }
 .mat-progress-spinner circle, .mat-spinner circle {
-    stroke: #212121;
+    stroke: $secondaryColor;
     /* stroke: #E70003; */
 }
 .btn-primary{
-    background-color: #212121;
-    border-color: #212121;
+    background-color: $secondaryColor;
+    border-color: $secondaryColor;
     /* background-color: #E70003;
     border-color: #E70003; */
 }
 .btn-primary:hover{
-    background-color: #3d3d3d;
-    border-color: #3d3d3d;
+    background-color: $secondaryColorHovered;
+    border-color: $secondaryColorHovered;
     /* background-color: #ff2628;
     border-color: #ff2628; */
 }
+
+
+

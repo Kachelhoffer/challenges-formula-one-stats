@@ -6,7 +6,7 @@ import { ChampionDriverListModelType, FormulaOneAPIService, RaceWinnersForYearTy
 @Component({
   selector: 'app-content-display',
   templateUrl: './content-display.component.html',
-  styleUrls: ['./content-display.component.css']
+  styleUrls: ['./content-display.component.scss']
 })
 export class ContentDisplayComponent implements OnInit {
 

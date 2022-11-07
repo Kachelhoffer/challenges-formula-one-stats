@@ -7,7 +7,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
 @Component({
   selector: 'app-cards-display',
   templateUrl: './cards-display.component.html',
-  styleUrls: ['./cards-display.component.css']
+  styleUrls: ['./cards-display.component.scss']
 })
 export class CardsDisplayComponent{
 

@@ -4,7 +4,7 @@ import { WinnerModelType } from '../card/card.component';
 @Component({
   selector: 'app-expansion-panel',
   templateUrl: './expansion-panel.component.html',
-  styleUrls: ['./expansion-panel.component.css']
+  styleUrls: ['./expansion-panel.component.scss']
 })
 export class ExpansionPanelComponent implements OnInit {
 

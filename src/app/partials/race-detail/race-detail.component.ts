@@ -6,7 +6,7 @@ import { WinnerModelType } from '../card/card.component';
 @Component({
   selector: 'app-race-detail',
   templateUrl: './race-detail.component.html',
-  styleUrls: ['./race-detail.component.css']
+  styleUrls: ['./race-detail.component.scss']
 })
 export class RaceDetailComponent implements OnInit  {
   
